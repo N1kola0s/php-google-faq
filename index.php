@@ -45,10 +45,6 @@ $faqs = [
 
 ];
 
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -65,6 +61,11 @@ $faqs = [
 
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -89,7 +90,7 @@ $faqs = [
                 <li class="pe-3"><a class="py-1 pe-3" href="#">Norme sulla privacy</a></li>
                 <li class="pe-3"><a class="py-1 pe-3" href="#">Termini di servizio</a></li>
                 <li class="pe-3"><a class="py-1 pe-3" href="#">Tecnologie</a></li>
-                <li class="pe-3"><a class="pe-3 text-primary border-bottom border-3 border-primary py-1" href="#" >Domande frequenti</a></li>   
+                <li class="pe-3"><a class="pe-3 text-primary border-bottom border-4 border-primary py-1" href="#" >Domande frequenti</a></li>   
             </ul>
         </div>
         <!-- /.bottom -->
