@@ -122,7 +122,7 @@ $faqs = [
     <?php endforeach; ?> 
 
     </div>
-    <!-- /.container -->
+    <!-- /.container_md -->
 
 
 </main>
