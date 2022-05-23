@@ -60,17 +60,56 @@ $faqs = [
 
     <title>php-google-faq</title>
 
-    <link rel="stylesheet" href="./assets/style.css">
-    
+    <!-- stylesheet css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
 
+<header id="site_header">
+
+    <div class="container-fluid">
+        <div class="top d-flex align-items-center">
+            <div class="logo px-1">
+                <img src="./assets/img/logo-google-01.png" alt="logo-google" >
+            </div>
+            <!-- /.logo -->
+
+            <h1 class="m-0">Privacy & Termini</h1>
+
+        </div>
+        <!-- /.top -->
+
+        <div class="bottom border-bottom border-2 border-gray my-0">
+            <ul class="d-flex align-items-center px-2 mb-1">
+                <li class="pe-3"><a class="py-1 pe-3" href="#">Introduzione</a></li>
+                <li class="pe-3"><a class="py-1 pe-3" href="#">Norme sulla privacy</a></li>
+                <li class="pe-3"><a class="py-1 pe-3" href="#">Termini di servizio</a></li>
+                <li class="pe-3"><a class="py-1 pe-3" href="#">Tecnologie</a></li>
+                <li class="pe-3"><a class="pe-3 text-primary border-bottom border-3 border-primary py-1" href="#" >Domande frequenti</a></li>   
+            </ul>
+        </div>
+        <!-- /.bottom -->
+    </div>
+
+    
+   
+</header>
+<!-- /#site_header -->
+
+<main id="site_main">
+
+    <div class="container_md py-4">
+   
     <!-- ciclo con un foreach nell'array esterno faqs avente chiave faq e valore answer -->
     <?php foreach($faqs as $faq => $answers) : ?>
         <!-- stampo a schermo le domande faq -->
-        <h2><?php echo $faq; ?></h2>
+        <h2 class="py-2"><?php echo $faq; ?></h2>
         
-        <div>   
+        <div class="py-3">   
         <!-- annido un ciclo foreach per l'array delle risposte in modo che mi restituisca i singoli paragrafi  -->
         <?php foreach($answers as $answer => $text) : ?>
             <!-- stampo a schermo i singoli paragrafi -->
@@ -81,6 +120,13 @@ $faqs = [
         </div>
 
     <?php endforeach; ?> 
-    
+
+    </div>
+    <!-- /.container -->
+
+
+</main>
+<!-- /#site_main -->
+ 
 </body>
 </html>
