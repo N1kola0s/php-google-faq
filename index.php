@@ -64,13 +64,16 @@ $faqs = [
     
 </head>
 <body>
+
+    <!-- ciclo con un foreach nell'array esterno faqs avente chiave faq e valore answer -->
     <?php foreach($faqs as $faq => $answers) : ?>
-
+        <!-- stampo le domande faq -->
         <h2><?php echo $faq; ?></h2>
-        <div>
-            
+        
+        <div>   
+        <!-- annido un ciclo foreach per l'array delle risposte in modo che mi restituisca i singoli paragrafi  -->
         <?php foreach($answers as $answer => $text) : ?>
-
+            <!-- stampo i singoli paragrafi -->
             <p><?php echo $text ?></p>
 
         <?php endforeach; ?> 
